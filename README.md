@@ -24,7 +24,6 @@ The method will returns Promise object.
 const { request } = require('aws-sdk-client')
 
 const run = async () => {
-  const { request } = AWSClient
   try {
     const item = await request('S3', 'listBuckets', {})
     console.log(item)
@@ -51,3 +50,6 @@ request('S3', 'listBuckets', {})
    [ { Name: 'my-example-buckets',
        CreationDate: 2017-12-08T20:37:45.000Z },
 ```
+
+## Contributors
+- @horike37 - Basic idea

@@ -6,7 +6,7 @@ const Service = require('./classes/client')
  * @param {string} service AWS service name (Like S3, EC2, etc...) When you set `DynamoDB`, it will be `DynamoDB.DocumentClient`.
  * @param {string} method AWS API action name
  * @param {object} params AWS API parameters
- * @param {string} [region] AWS Service region
+ * @param {string} [region=''] AWS Service region
  * @param {boolean} [isDebug=false] Log request and response parameters
  * @return {Promise<{}>} AWS API(aws-sdk) result
  * @example <caption>Call S3.ListBucket API as Promise</caption>

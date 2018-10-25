@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "precommit": "lint-staged",
+    "doc": "./node_modules/.bin/jsdoc -c ./jsdoc.json",
     "test": "./node_modules/.bin/mocha tests/* -R spec --recursive"
   },
   "keywords": [],
@@ -21,6 +22,7 @@
     ]
   },
   "devDependencies": {
+    "docdash": "^1.0.0",
     "eslint": "^5.7.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.14.0",
@@ -28,6 +30,7 @@
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
     "husky": "^1.1.2",
+    "jsdoc": "^3.5.5",
     "lint-staged": "^7.3.0",
     "mocha": "^5.2.0",
     "power-assert": "^1.6.1",
