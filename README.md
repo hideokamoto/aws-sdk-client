@@ -51,5 +51,9 @@ request('S3', 'listBuckets', {})
        CreationDate: 2017-12-08T20:37:45.000Z },
 ```
 
+## API Reference
+[https://hideokamoto.github.io/aws-sdk-client/](https://hideokamoto.github.io/aws-sdk-client/)
+
+
 ## Contributors
 - @horike37 - Basic idea
