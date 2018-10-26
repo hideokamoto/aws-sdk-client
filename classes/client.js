@@ -23,7 +23,7 @@ class AwsClientService {
     if (service === 'DynamoDB') {
       return new this.aws.DynamoDB.DocumentClient({ region })
     }
-    return new this.aws[service]({ region })
+    return new this.aws[service](region)
   }
   /**
    * Initilize the client

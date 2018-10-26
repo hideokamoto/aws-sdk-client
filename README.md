@@ -59,4 +59,5 @@ request('S3', 'listBuckets', {})
 - @horike37 - Basic idea
 
 ## History
+- v0.0.3: Small bug fixed
 - v0.0.2: Region bug fixed
