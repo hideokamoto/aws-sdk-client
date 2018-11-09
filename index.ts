@@ -22,8 +22,11 @@ const Service = require('./classes/client')
  * console.log(item)
  *
  */
-const request = (service, method, params, region = '', isDebug = false) => {
-  const config = {}
+const request = (service: string, method: string, params: {}, region = '', isDebug = false) => {
+  const config: {
+    region?: string,
+    debug?: boolean
+  } = {}
   if (region) config.region = region
   if (isDebug) config.debug = isDebug
   const client = new Service(config)

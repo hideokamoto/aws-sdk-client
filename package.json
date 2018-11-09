@@ -1,19 +1,18 @@
 {
   "name": "aws-sdk-client",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "client libs for aws-sdk",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "precommit": "lint-staged",
+    "build": "tsc",
+    "lint": "eslint .",
     "doc": "./node_modules/.bin/jsdoc -c ./jsdoc.json",
     "test": "./node_modules/.bin/mocha tests/* -R spec --recursive"
   },
   "keywords": [],
   "author": "Hidetaka Okamoto <info@wp-kyoto.net> (https://wp-kyoto.net)",
   "license": "MIT",
-  "dependencies": {
-    "aws-sdk": "^2.342.0"
-  },
   "lint-staged": {
     "*.js": [
       "prettier-eslint --write",
@@ -22,6 +21,8 @@
     ]
   },
   "devDependencies": {
+    "@types/node": "^8.0.57",
+    "aws-sdk": "^2.352.0",
     "docdash": "^1.0.0",
     "eslint": "^5.7.0",
     "eslint-config-standard": "^12.0.0",
@@ -36,6 +37,10 @@
     "power-assert": "^1.6.1",
     "prettier": "^1.14.3",
     "prettier-eslint": "^8.8.2",
-    "prettier-eslint-cli": "^4.7.1"
-  }
+    "prettier-eslint-cli": "^4.7.1",
+    "typescript": "^3.1.6"
+  },
+  "files": [
+    "dist"
+  ]
 }
