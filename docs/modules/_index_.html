@@ -3,17 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>aws-sdk-client</title>
+	<title>&quot;index&quot; | aws-sdk-client</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
 <header>
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js" data-base=".">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
 					<div class="field">
 						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">aws-sdk-client</a>
+					<a href="../index.html" class="title">aws-sdk-client</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -53,76 +53,135 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="globals.html">Globals</a>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="_index_.html">&quot;index&quot;</a>
 				</li>
 			</ul>
-			<h1> aws-sdk-client</h1>
+			<h1>External module &quot;index&quot;</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<div class="tsd-panel tsd-typography">
-				<h1 id="aws-sdk-client-for-node-js">AWS-SDK Client for Node.js</h1>
-				<p>Call AWS API more easily.</p>
-				<h2 id="getting-started">Getting started</h2>
-				<h3 id="install-by-npm">Install by npm</h3>
-				<pre><code>$ npm <span class="hljs-selector-tag">i</span> -S aws-sdk-client</code></pre><h3 id="run-request-function">run request function</h3>
-				<p>You can call AWS API by following method.</p>
-				<pre><code><span class="hljs-function"><span class="hljs-title">request</span><span class="hljs-params">(<span class="hljs-string">'AWS_SERVICE_NAME'</span>, <span class="hljs-string">'AWS_API_NAME'</span>, parameters, [REGION])</span></span></code></pre><p>The method will returns Promise object.</p>
-				<h4 id="async-await">async / await</h4>
-				<pre><code><span class="hljs-keyword">const</span> { request } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'aws-sdk-client'</span>)
-
-<span class="hljs-keyword">const</span> run = <span class="hljs-keyword">async</span> () =&gt; {
-  <span class="hljs-keyword">try</span> {
-    <span class="hljs-keyword">const</span> item = <span class="hljs-keyword">await</span> request(<span class="hljs-string">'S3'</span>, <span class="hljs-string">'listBuckets'</span>, {})
-    <span class="hljs-built_in">console</span>.log(item)
-  } <span class="hljs-keyword">catch</span> (e) {
-    <span class="hljs-built_in">console</span>.log(e)
-  }
-}
-run()
-
-{ <span class="hljs-attr">Buckets</span>:
-   [ { <span class="hljs-attr">Name</span>: <span class="hljs-string">'my-example-buckets'</span>,
-       <span class="hljs-attr">CreationDate</span>: <span class="hljs-number">2017</span><span class="hljs-number">-12</span><span class="hljs-number">-08</span>T20:<span class="hljs-number">37</span>:<span class="hljs-number">45.000</span>Z },</code></pre><h4 id="promise">Promise</h4>
-				<pre><code><span class="hljs-keyword">const</span> { request } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'aws-sdk-client'</span>)
-
-request(<span class="hljs-string">'S3'</span>, <span class="hljs-string">'listBuckets'</span>, {})
-  .then(<span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(data))
-
-{ <span class="hljs-attr">Buckets</span>:
-   [ { <span class="hljs-attr">Name</span>: <span class="hljs-string">'my-example-buckets'</span>,
-       <span class="hljs-attr">CreationDate</span>: <span class="hljs-number">2017</span><span class="hljs-number">-12</span><span class="hljs-number">-08</span>T20:<span class="hljs-number">37</span>:<span class="hljs-number">45.000</span>Z },</code></pre><h2 id="api-reference">API Reference</h2>
-				<p><a href="https://hideokamoto.github.io/aws-sdk-client/">https://hideokamoto.github.io/aws-sdk-client/</a></p>
-				<h2 id="contributors">Contributors</h2>
-				<ul>
-					<li>@horike37 - Basic idea</li>
-				</ul>
-				<h2 id="history">History</h2>
-				<ul>
-					<li>v0.0.3: Small bug fixed</li>
-					<li>v0.0.2: Region bug fixed</li>
-				</ul>
-			</div>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Variables</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_index_.html#service" class="tsd-kind-icon">Service</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_index_.html#request" class="tsd-kind-icon">request</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="service" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> Service</h3>
+					<div class="tsd-signature tsd-kind-icon">Service<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;./classes/client&#x27;)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/hideokamoto/aws-sdk-client/blob/e2f156f/index.ts#L1">index.ts:1</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="request" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> request</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">request<span class="tsd-signature-symbol">(</span>service<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, method<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">__type</span>, region<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, isDebug<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hideokamoto/aws-sdk-client/blob/e2f156f/index.ts#L25">index.ts:25</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Request to AWS SDK API</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>service: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>AWS service name (Like S3, EC2, etc...) When you set <code>DynamoDB</code>, it will be <code>DynamoDB.DocumentClient</code>.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>method: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>AWS API action name</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>params: <span class="tsd-signature-type">__type</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>AWS API parameters</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> region: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;&quot;</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> isDebug: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<blockquote>
+								<p>} AWS API(aws-sdk) result</p>
+							</blockquote>
+						</li>
+					</ul>
+				</section>
+			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="globals.html"><em>Globals</em></a>
+						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_classes_client_.html">"classes/client"</a>
+						<a href="_classes_client_.html">"classes/client"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_index_.html">"index"</a>
+					<li class="current tsd-kind-external-module">
+						<a href="_index_.html">"index"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_index_.html#service" class="tsd-kind-icon">Service</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_index_.html#request" class="tsd-kind-icon">request</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -191,7 +250,7 @@ request(<span class="hljs-string">'S3'</span>, <span class="hljs-string">'listBu
 	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
-<script src="assets/js/main.js"></script>
-<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 </body>
 </html>

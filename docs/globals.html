@@ -63,54 +63,25 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<div class="tsd-panel tsd-typography">
-				<h1 id="aws-sdk-client-for-node-js">AWS-SDK Client for Node.js</h1>
-				<p>Call AWS API more easily.</p>
-				<h2 id="getting-started">Getting started</h2>
-				<h3 id="install-by-npm">Install by npm</h3>
-				<pre><code>$ npm <span class="hljs-selector-tag">i</span> -S aws-sdk-client</code></pre><h3 id="run-request-function">run request function</h3>
-				<p>You can call AWS API by following method.</p>
-				<pre><code><span class="hljs-function"><span class="hljs-title">request</span><span class="hljs-params">(<span class="hljs-string">'AWS_SERVICE_NAME'</span>, <span class="hljs-string">'AWS_API_NAME'</span>, parameters, [REGION])</span></span></code></pre><p>The method will returns Promise object.</p>
-				<h4 id="async-await">async / await</h4>
-				<pre><code><span class="hljs-keyword">const</span> { request } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'aws-sdk-client'</span>)
-
-<span class="hljs-keyword">const</span> run = <span class="hljs-keyword">async</span> () =&gt; {
-  <span class="hljs-keyword">try</span> {
-    <span class="hljs-keyword">const</span> item = <span class="hljs-keyword">await</span> request(<span class="hljs-string">'S3'</span>, <span class="hljs-string">'listBuckets'</span>, {})
-    <span class="hljs-built_in">console</span>.log(item)
-  } <span class="hljs-keyword">catch</span> (e) {
-    <span class="hljs-built_in">console</span>.log(e)
-  }
-}
-run()
-
-{ <span class="hljs-attr">Buckets</span>:
-   [ { <span class="hljs-attr">Name</span>: <span class="hljs-string">'my-example-buckets'</span>,
-       <span class="hljs-attr">CreationDate</span>: <span class="hljs-number">2017</span><span class="hljs-number">-12</span><span class="hljs-number">-08</span>T20:<span class="hljs-number">37</span>:<span class="hljs-number">45.000</span>Z },</code></pre><h4 id="promise">Promise</h4>
-				<pre><code><span class="hljs-keyword">const</span> { request } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'aws-sdk-client'</span>)
-
-request(<span class="hljs-string">'S3'</span>, <span class="hljs-string">'listBuckets'</span>, {})
-  .then(<span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(data))
-
-{ <span class="hljs-attr">Buckets</span>:
-   [ { <span class="hljs-attr">Name</span>: <span class="hljs-string">'my-example-buckets'</span>,
-       <span class="hljs-attr">CreationDate</span>: <span class="hljs-number">2017</span><span class="hljs-number">-12</span><span class="hljs-number">-08</span>T20:<span class="hljs-number">37</span>:<span class="hljs-number">45.000</span>Z },</code></pre><h2 id="api-reference">API Reference</h2>
-				<p><a href="https://hideokamoto.github.io/aws-sdk-client/">https://hideokamoto.github.io/aws-sdk-client/</a></p>
-				<h2 id="contributors">Contributors</h2>
-				<ul>
-					<li>@horike37 - Basic idea</li>
-				</ul>
-				<h2 id="history">History</h2>
-				<ul>
-					<li>v0.0.3: Small bug fixed</li>
-					<li>v0.0.2: Region bug fixed</li>
-				</ul>
-			</div>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>External modules</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-external-module"><a href="modules/_classes_client_.html" class="tsd-kind-icon">"classes/client"</a></li>
+								<li class="tsd-kind-external-module"><a href="modules/_index_.html" class="tsd-kind-icon">"index"</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
+					<li class="globals current ">
 						<a href="globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-external-module">
