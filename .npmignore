@@ -2,3 +2,4 @@ docs/
 tests/
 .eslint*
 jsdoc.json
+example/
