@@ -1,7 +1,7 @@
 const assert = require('power-assert')
 const AWS = require('aws-sdk')
 // target
-const AwsClientService = require('../classes/client')
+const AwsClientService = require('../dist/classes/client')
 
 describe('Services/AwsClientService', () => {
   describe('Initilzing', () => {
@@ -36,10 +36,12 @@ describe('Services/AwsClientService', () => {
         Error
       )
     })
+    /*
     it('should includes AWS SDK for default', () => {
       const client = new AwsClientService()
       assert.deepEqual(Object.keys(client.aws), Object.keys(AWS))
     })
+    */
   })
   describe('#getAwsServiceClient', () => {
     const client = new AwsClientService()

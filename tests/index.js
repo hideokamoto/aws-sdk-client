@@ -1,6 +1,6 @@
 const assert = require('power-assert')
 // target
-const AwsClient = require('../index')
+const AwsClient = require('../dist/index')
 
 describe('AwsClient', () => {
   describe('Method', () => {

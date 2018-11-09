@@ -1,5 +1,10 @@
+import * as AWS from 'aws-sdk'
 /** Class AWS Client Service */
 class AwsClientService {
+  private aws: any
+  private debug: boolean
+  private region: string
+
   /**
    * Initilize the client
    * @param {object} config aws-sdk config
@@ -7,8 +12,16 @@ class AwsClientService {
    * @param {string} [config.region=''] AWS Resource region. If empty, use env config.
    * @param {bool} [config.debug=false] If true, logging request parameters and response
    */
-  constructor (config = {}) {
-    this.aws = config.awsClient || require('aws-sdk')
+  constructor (config: {
+    awsClient?: any,
+    region?: string,
+    debug?: boolean
+  } = {
+    awsClient: AWS,
+    region: 'us-east-1',
+    debug: false
+  }) {
+    this.aws = config.awsClient || AWS
     this.region = config.region || ''
     this.debug = config.debug || false
   }
@@ -19,7 +32,7 @@ class AwsClientService {
    * @param {string} [region=this.region] AWS Service region
    * @return {object} AWS-SDK Client class
    */
-  getAwsServiceClient (service, region = this.region) {
+  getAwsServiceClient (service: string, region: string = this.region) {
     if (service === 'DynamoDB') {
       return new this.aws.DynamoDB.DocumentClient({ region })
     }
@@ -33,7 +46,7 @@ class AwsClientService {
    * @param {string} [region=''] AWS Service region
    * @return {Promise<{}>} AWS API(aws-sdk) result
    */
-  async request (service, method, params, region = this.region) {
+  async request (service: string, method: string, params: {}, region:string = this.region) {
     this.trackInfo({ service, method, params, region })
     try {
       const awsService = this.getAwsServiceClient(service, region)
@@ -45,10 +58,10 @@ class AwsClientService {
       throw e
     }
   }
-  trackInfo (data) {
+  trackInfo (data: {}) {
     if (this.debug) console.log('Tracker:Info: %j', data)
   }
-  trackError (data) {
+  trackError (data: {}) {
     console.log('Tracker:Error: %j', data)
   }
 }
