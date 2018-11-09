@@ -58,6 +58,16 @@ request('S3', 'listBuckets', {})
 ## Contributors
 - @horike37 - Basic idea
 
+## Publish
+
+```
+$ npm run build
+$ npm publish
+```
+
 ## History
+- v0.1.2: Small bug fixed
+- v0.1.1: Small bug fixed
+- v0.1.0: Replace as TypeScript
 - v0.0.3: Small bug fixed
 - v0.0.2: Region bug fixed
