@@ -1,6 +1,6 @@
 {
   "name": "aws-sdk-client",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "client libs for aws-sdk",
   "main": "dist/index.js",
   "scripts": {
