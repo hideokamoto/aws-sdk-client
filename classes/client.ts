@@ -1,6 +1,6 @@
 import * as AWS from 'aws-sdk'
 /** Class AWS Client Service */
-class AwsClientService {
+class Client {
   private aws: any
   private debug: boolean
   private region: string
@@ -65,4 +65,4 @@ class AwsClientService {
     console.log('Tracker:Error: %j', data)
   }
 }
-module.exports = AwsClientService
+export default Client

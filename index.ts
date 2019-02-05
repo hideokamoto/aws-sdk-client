@@ -1,4 +1,4 @@
-const Service = require('./classes/client')
+import Client from './classes/client'
 
 /**
  * Request to AWS SDK API
@@ -7,7 +7,7 @@ const Service = require('./classes/client')
  * @param {string} method AWS API action name
  * @param {object} params AWS API parameters
  * @param {string} [region=''] AWS Service region
- * @param {boolean} [isDebug=false] Log request and response parameters
+ * @param {boolean} [isDebug=true] Log request and response parameters
  * @return {Promise<{}>} AWS API(aws-sdk) result
  * @example <caption>Call S3.ListBucket API as Promise</caption>
  * // return { Buckets: [ { Name: 'my-example-buckets', CreationDate: 2017-12-08T20:37:45.000Z },...]
@@ -22,18 +22,21 @@ const Service = require('./classes/client')
  * console.log(item)
  *
  */
-const request = (service: string, method: string, params: {}, region = '', isDebug = false) => {
+const request = (service: string, method: string, params: {}, region = '', isDebug = true) => {
   const config: {
     region?: string,
     debug?: boolean
   } = {}
   if (region) config.region = region
   if (isDebug) config.debug = isDebug
-  const client = new Service(config)
+  const client = new Client(config)
   return client.request(service, method, params)
 }
 
-module.exports = {
-  Service,
-  request
+const client = {
+  request,
+  Client
 }
+
+export default client
+module.exports = client
