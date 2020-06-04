@@ -22,7 +22,7 @@
     ]
   },
   "devDependencies": {
-    "@types/node": "8.10.50",
+    "@types/node": "8.10.61",
     "aws-sdk": "2.493.0",
     "eslint": "5.16.0",
     "eslint-config-standard": "12.0.0",
