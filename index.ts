@@ -35,7 +35,9 @@ const request = (service: string, method: string, params: {}, region = '', isDeb
 
 const client = {
   request,
-  Client
+  Client,
+  // backward compatibility
+  Service: Client
 }
 
 export default client

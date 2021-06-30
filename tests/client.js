@@ -1,7 +1,7 @@
 const assert = require('power-assert')
 const AWS = require('aws-sdk')
 // target
-const AwsClientService = require('../dist/classes/client')
+const AwsClientService = require('../dist/classes/client').default
 
 describe('Services/AwsClientService', () => {
   describe('Initilzing', () => {
